@@ -4,6 +4,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 @media print{header,footer,.progress,.skip{display:none}body{background:white;color:black}.resume{padding:0;width:100%}.resume section{break-inside:avoid}.resume li,.muted{color:#333}.resume h1{font-size:32px}.resume h2{font-size:20px}}
 
-.company-mark.company-logo{display:flex;align-items:center;justify-content:center;width:72px;height:72px;flex:0 0 72px;aspect-ratio:1;overflow:hidden;background:#fff;padding:8px;border-color:#ddd}.company-logo img{display:block;width:100%;height:100%;max-width:100%;max-height:100%;min-width:0;min-height:0;object-fit:contain}
+.company-mark.company-logo{display:flex;align-items:center;justify-content:center;width:72px;height:72px;flex:0 0 72px;aspect-ratio:1;overflow:hidden;background:#fff;padding:8px;border-color:#ddd}.company-logo img{display:block;width:56px;height:56px;max-width:56px;max-height:56px;flex:0 0 56px;min-width:0;min-height:0;object-fit:contain}
 
 .eparts-logo img{object-fit:contain}
