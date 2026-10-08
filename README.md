@@ -1,37 +1,38 @@
 # Prahanya Sriram — Portfolio
 
-A minimal, responsive portfolio prepared for https://prahanyaa.github.io.
-Plain HTML and CSS; no installation or build dependencies.
+Responsive static portfolio for GitHub Pages. No build step required.
+
+## Update the existing website
+1. Unzip `Prahanya_Interactive_Portfolio.zip`.
+2. Open https://github.com/prahanyaa/prahanyaa.github.io.
+3. Choose **Add file → Upload files**.
+4. Drag `index.html`, `resume.html`, `README.md`, and the whole `assets` folder from the extracted folder. Upload the files themselves, not the outer folder or ZIP.
+5. Commit to `main`. The existing Pages workflow copies the assets automatically, including the new `app.js`.
+6. Wait for the Actions deployment to finish, then refresh https://prahanyaa.github.io with Cmd + Shift + R.
+
+The included `.github/workflows/pages.yml` is unchanged; an existing deployment workflow does not need to be replaced.
+
+## Features
+- Interactive backend/cloud/reliability illustration
+- Expandable production work highlights and proposed project scopes
+- Filterable toolkit
+- Persistent light/dark theme
+- Rotating role text, section navigation, scroll progress and reveal effects
+- Responsive mobile layout, keyboard access, reduced-motion support
+- Résumé overview with print styling
+
+## Content
+EventFlow and CloudForge are planned, not completed. No project results or repositories are invented. Employer highlights use existing professional experience. The illustration is conceptual, not an employer architecture diagram.
+
+The résumé page is an overview, not a downloadable full CV. Add a reviewed résumé PDF, portrait, LinkedIn URL and email only when supplied. The contact section currently links to GitHub; it has no nonfunctional form.
 
 ## Preview
-Open index.html in a browser, or run `python3 -m http.server 8000` in this folder and visit http://localhost:8000.
+Open index.html or run `python3 -m http.server 8000` in this directory.
 
-## Publish on GitHub Pages
-1. Create a public repository named `prahanyaa.github.io` under your GitHub account. If it already exists, review its contents before replacing anything.
-2. Upload the contents of this folder into the repository root on the `main` branch. Do not upload a parent `portfolio` folder.
-3. Ensure `.github/workflows/pages.yml` is included. Browser uploads may skip hidden folders; create this file manually using GitHub's Add file → Create new file if needed.
-4. Open Settings → Pages → Build and deployment → Source → GitHub Actions.
-5. Open Actions, select Deploy portfolio to GitHub Pages, and run the workflow on `main` (or push a new commit).
-6. Once the workflow succeeds, visit https://prahanyaa.github.io.
+## Files
+- index.html: portfolio content
+- resume.html: résumé overview
+- assets/style.css: design and responsive layouts
+- assets/app.js: interactions
 
-Git upload alternative, after creating an empty repository:
-```bash
-git init -b main
-git add .
-git commit -m "Add professional portfolio"
-git remote add origin https://github.com/prahanyaa/prahanyaa.github.io.git
-git push -u origin main
-```
-Use these commands only in this extracted folder and only with a new empty repository.
-
-## Customize
-- `index.html`: introduction, work examples, projects, education, and skills.
-- `assets/style.css`: colors, spacing, typography, and responsive layout.
-- `resume.html`: experience overview, not a replacement for your full résumé.
-- `.github/workflows/pages.yml`: automatic deployment.
-
-Your full résumé PDF, email, LinkedIn URL, and complete employment history were not supplied for this version. Add them when ready; no invented contact details or broken download links are included. To add a résumé download, place a reviewed PDF at `assets/Prahanya_Sriram_Resume.pdf`, add its link in the navigation, and retain the assets-copy step in the workflow.
-
-EventFlow and CloudForge are labeled Planned. Their listed capabilities are proposals, not completed accomplishments. Add repository/demo links and measured results only after implementation.
-
-Work summaries are high-level and include no employer code or internal architecture diagrams. Review all public text before publishing.
+Google Fonts is optional; the browser uses local sans-serif fallbacks if unavailable. Theme storage failure is handled gracefully. Content remains readable without JavaScript.
